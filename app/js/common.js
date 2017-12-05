@@ -18,12 +18,19 @@ $(function() {
 		$('.hamburger').removeClass('is-active');
 	});
 
+	$('.carousel-services').on('initialized.owl.carousel', function() {
+		setTimeout(function() {
+			carouselService();
+		}, 100);
+		
+	});
+
 	$('.carousel-services').owlCarousel({
-		loop: true,
 		nav: true,
 		smartSpeed: 700,
 		navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
 		responsiveClass: true,
+		dots: false,
 		responsive: {
 			0: {
 				items: 1
@@ -38,6 +45,8 @@ $(function() {
 
 	});
 
+	$('.carousel-services-content').equalHeights();
+
 	function carouselService() {
 		$('.carousel-services-item').each(function() {
 			var ths  = $(this),
@@ -45,5 +54,15 @@ $(function() {
 				ths.find('.carousel-services-image').css('min-height', thsh);
 		});
 	}carouselService();
-				
+
+	$('.carousel-services-composition .h3').each(function() {
+		var ths = $(this);
+		ths.html(ths.html().replace(/(\S+)\s*$/, '<span>$1</span>'));
+	});
+
+	//Resize Window
+	function onResize(){
+		$('.carousel-services-content').equalHeights();
+	}onResize();
+	window.onresize = function() {onResize()};			
 });

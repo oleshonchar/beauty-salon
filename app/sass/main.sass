@@ -27,13 +27,6 @@
 	color: #666
 	opacity: 1
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
-
 html, body
 	height: 100%
 
@@ -140,10 +133,13 @@ section, header
 	background-position: center
 
 section
-	background-color: #FFF
+	background-color: #fff
 	&.inverse
 		color: #fff
 		background-color: $dark
+		&.s-call
+			background-color: #fff
+
 	.h2
 		font-size: 30px
 		font-weight: 800
@@ -424,6 +420,18 @@ $colors: $blue, $red, $accent
 			margin: 30px 0
 			font-size: 18px
 
+	&-call
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: 5%
+		&::before
+			content: ''
+			width: 50%
+			right: 0
+			height: 100%
+			position: absolute
+			background-color: rgba($accent, .92)
+
 .section-overley
 	&::before
 		content: ''
@@ -455,6 +463,75 @@ $colors: $blue, $red, $accent
 		.fotorama__thumb
 			border-color: #3d3c3c
 
+input, textarea, select
+	background-color: transparent
+	border: rgba(#000, .1) 1px solid
+	border-bottom: rgba(#000, .1) 2px solid
+	border-radius: 2px
+	padding: 8px 20px
+	outline: none
+	display: inline-block
+	font-size: 16px
+	color: #333
+
+select
+	padding: 10px 22px
+
+.success
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	text-transform: uppercase
+	font-weight: bold
+	display: flex
+	z-index: 10
+	span
+		margin: auto
+	& ~ *
+		transition: all .5s ease
+	&.active
+		& ~ *
+			opacity: .5
+			filter: blur(10px)	
+
+.collback
+	padding: 25% 0
+	position: relative
+
+	&-logo
+	img
+		width: 100px
+		height: auto
+	
+	p
+		margin-top: 0
+
+	input, textarea, select
+		color: #fff
+		width: 100%
+		margin-top: 17px
+
+		&::-webkit-input-placeholder
+			color: #fff
+			opacity: 1
+		&::-moz-placeholder
+			color: #fff
+			opacity: 1
+		&::-ms-input-placeholder
+			color: #fff
+
+		option
+			color: #333
+
+	.button
+		margin-top: 40px
+
+.formhead
+	margin: 0
+	font-size: 30px
+	color: #fff
 
 
 @import "media" // Всегда в конце

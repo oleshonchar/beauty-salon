@@ -683,5 +683,103 @@ select
 			&.owl-next
 				right: -60px
 
+.main-footer
+	background-color: #242424
+	padding: 3% 0
+	font-size: 14px
+	//color: #fff
+
+.footer-column
+	margin: 15px 0
+
+.logo-footer
+	width: 125px
+	height: auto
+	+ p
+		color: #666
+		padding: 0
+		margin:
+			bottom: 15px
+			top: 15px
+		font-size: 14px
+
+.social-footer
+	margin-top: 38px
+	.soc
+		li
+			display: inline-block
+			margin: 3px
+			a
+				color: #ABABAB
+				margin-bottom: 0
+				transition: color .5s ease, background-color .5s ease
+				&:hover
+					color: rgba(#fff, .8)
+
+.footer-menu
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li.active
+			a
+				color: $accent
+				&::before
+					color: $accent
+			a
+				color: #979797
+				transition: color .5s ease
+				display: inline-block
+				padding: 4px 0
+				text-decoration: underline
+				padding-left: 20px
+				position: relative
+				&:hover, &:focus
+					color: $accent
+					&::before
+						color: $accent
+				&::before
+					position: absolute
+					font-family: fontawesome
+					content: '\f219'
+					left: 0
+					color: #fff
+					font-size: 12px
+					transition: color .5s ease
+					top: 6px
+					margin-right: 12px
+
+.footer-addr
+	position: relative
+	font-size: 15px
+	padding-left: 20px
+	margin: 0 0 20px
+	color: #fff
+	.fa
+		position: absolute
+		left: 0
+		top: 5px
+		font-size: 18px
+		color: #555
+
+	.footer-phone
+		font-size: 26px
+		font-family: firasans, sans-serif
+		padding-top: 10px
+		display: block
+		white-space: nowrap
+		.fa
+			top: 19px
+			font-size: 22px
+			left: 3px
+
+
+.map
+	max-height: 200px
+	opacity: .7
+	transition: opacity .5s ease
+	&:hover
+		opacity: 1
+
 
 @import "media" // Всегда в конце

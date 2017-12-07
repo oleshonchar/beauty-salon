@@ -110,6 +110,52 @@ body
 .text-center
 	text-align: center
 
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alpha(opacity=$opacity)
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	z-index: 100
+	background-color: $dark
+	.pulse
+		position: relative
+		left: 50%
+		top: 50%
+		margin: 
+			left: -40px
+			top: -40px
+		&::before, &::after
+			content: ''
+			border: 5px solid #323232
+			width: 80px
+			height: 80px
+			border-radius: 500px
+			position: absolute
+		&::before
+			animation: pulse-outer .8s ease-in infinite
+		&::after
+			animation: pulse-inner .8s linear infinite
+
+@keyframes pulse-outer
+	0%
+		@include opacity(100)
+	50%
+		@include opacity(50)
+	100%
+		@include opacity(0)
+@keyframes pulse-inner
+	0%
+		@include opacity(0)
+		transform: scale(0)
+	100%
+		@include opacity(100)
+		transform: scale(1)
+
 .logo
 	img
 		width: 125px

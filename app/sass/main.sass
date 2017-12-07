@@ -434,6 +434,15 @@ $colors: $blue, $red, $accent
 			position: absolute
 			background-color: rgba($accent, .92)
 
+	&-partners
+		&::before
+			background-color: #FFF !important
+		.h2
+			margin-top: 10px
+			span
+				color: $accent
+
+
 .section-overley
 	&::before
 		content: ''
@@ -638,6 +647,41 @@ select
 			right: -32px
 			transform: rotate(0)
 
+.partners
+	.partner
+		height: 100%
+		display: flex
+		margin: auto
+
+	.owl-stage
+		display: flex
+
+	.owl-item
+		margin-top: 30px
+		img
+			max-width: 100%
+			width: auto
+			display: inline-block
+			margin: auto
+
+	.owl-nav
+		position: absolute
+		top: 0
+		width: 100%
+		z-index: 2
+		> div
+			position: absolute
+			top: 40px
+			color: #999
+			font-size: 30px
+			transition: opacity .5s ease
+			padding: 0 10px
+			&:hover
+				opacity: .6
+			&.owl-prev
+				left: -60px
+			&.owl-next
+				right: -60px
 
 
 @import "media" // Всегда в конце

@@ -65,8 +65,13 @@ $(function() {
 		ths.html(ths.html().replace(/^(\S+)/, '<span>$1</span>'));
 	});
 
-	$('select').selectize({
+	$('select').selectize();
 
+	$('.reviews').owlCarousel({
+		loop: true,
+		items: 1,
+		smartSpeed: 700,
+		autoHeight: true
 	});
 
 	//E-mail Ajax Send

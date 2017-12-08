@@ -22,7 +22,7 @@ Requirements:
 
 How to run:
 
-    git clone git@github.com:oleshonchar/beauty-salon.git
+    git clone https://github.com/oleshonchar/beauty-salon.git beauty-salon
     cd beauty-salon
     npm install
     gulp serve

@@ -1,6 +1,5 @@
-# Beauty salon S&Mitler
+# S&Mitler
 #### This is a landing page for beauty salon S&Mitler
-#### By Oles Honchar
 ## Description
 This is a webpage about S&Mitler beauty salon. Landing includes: presentation of salon, list of services, pictures, feedback form, contain review clients, an address with an interactive map and contact information.
 
@@ -22,10 +21,10 @@ Requirements:
 
 How to run:
 
-    git clone https://github.com/oleshonchar/beauty-salon.git beauty-salon
+    git clone https://github.com/oleshonchar/beauty-salon.git
     cd beauty-salon
     npm install
-    gulp serve
+    gulp
   
 ## Screenshots
 ![Design](https://github.com/oleshonchar/beauty-salon/raw/master/design.jpg)

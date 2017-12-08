@@ -2,7 +2,7 @@
 #### This is a landing page for beauty salon S&Mitler
 #### By Oles Honchar
 ## Description
-This is a webpage about S&Mitler beauty salon. Landing includes: presentation of salon, list or services, pictures, feedback form, contain review clients, an address with an interactive map and contact information.
+This is a webpage about S&Mitler beauty salon. Landing includes: presentation of salon, list of services, pictures, feedback form, contain review clients, an address with an interactive map and contact information.
 
 ## Technologies used
 * HTML5

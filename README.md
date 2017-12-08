@@ -2,13 +2,16 @@
 #### This is a landing page for beauty salon S&Mitler
 #### By Oles Honchar
 ## Description
-This is a webpage about S&Mitler beauty salon. It includes details such ... contact information.
+This is a webpage about S&Mitler beauty salon. Landing includes: presentation of salon, list or services, pictures, feedback form, contain review clients, an address with an interactive map and contact information.
+
 ## Technologies used
-* html5
-* css3
-* bootstrap (grid)
+* HTML5
+* CSS3
+* Bootstrap (grid)
 * jQuery
 * SASS
+* AJAX
+* cross-browser compatibility, responsive and adaptive web markup
 
 ## Build and run
 Requirements:
@@ -17,12 +20,17 @@ Requirements:
 * gulp
 * git
 
-## How to run:
+How to run:
 
     git clone git@github.com:oleshonchar/beauty-salon.git
     cd beauty-salon
     npm install
     gulp serve
   
+## Screenshots
+![Design](https://github.com/oleshonchar/beauty-salon/raw/master/design.jpg)
+
 ### LICENSE
 [MIT License](license)
+
+

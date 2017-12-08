@@ -16,7 +16,8 @@ Requirements:
 * npm
 * gulp
 * git
-How to run:
+
+## How to run:
 
     git clone git@github.com:oleshonchar/beauty-salon.git
     cd beauty-salon
